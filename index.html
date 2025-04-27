@@ -6,9 +6,9 @@
   <title>McCray Consulting</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; color: #333; }
+    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; color: #333; scroll-behavior: smooth;}
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
       color: #fff;
       padding: 6rem 2rem;
@@ -21,7 +21,7 @@
       gap: 0.3rem;
     }
     .hero-logo-name img {
-      width: 85px; /* 15% smaller */
+      width: 85px; 
       filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.6));
     }
     .hero-logo-name h1 {
@@ -41,28 +41,13 @@
     .button { background: #0077cc; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; margin-top: 1rem; transition: background 0.3s ease; }
     .button:hover { background: #005fa3; }
     @media (max-width: 768px) {
-      .hero-logo-name img {
-        width: 70px;
-      }
-      .hero-logo-name h1 {
-        font-size: 2rem;
-      }
-      nav a {
-        margin: 0 10px;
-        font-size: 1rem;
-      }
+      .hero-logo-name img { width: 70px; }
+      .hero-logo-name h1 { font-size: 2rem; }
+      nav a { margin: 0 10px; font-size: 1rem; }
     }
   </style>
 </head>
 <body>
-
-<header>
-  <div class="hero-logo-name">
-    <img src="logo.png" alt="McCray Consulting Logo">
-    <h1>McCray Consulting</h1>
-  </div>
-  <p>Transforming Sales, Strategy, and Success Across the United States, Europe and Beyond</p>
-</header>
 
 <nav>
   <a href="#about">About</a>
@@ -70,6 +55,15 @@
   <a href="#why">Why Choose Us</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<header>
+  <div class="hero-logo-name">
+    <img src="logo.png" alt="McCray Consulting Logo">
+    <div style="width:1px;height:60px;background:white;margin:0 8px;"></div>
+    <h1>McCray Consulting</h1>
+  </div>
+  <p>Transforming Sales, Strategy, and Success Across the United States, Europe and Beyond</p>
+</header>
 
 <section id="about">
   <h2>About McCray Consulting</h2>
